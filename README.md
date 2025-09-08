@@ -29,7 +29,7 @@ docker run -p 5050:5000 youtube-downloader
 🐳 Easy setup using Docker
 
 
-#🧪 (Optional) Run Locally Without Docker
+# 🧪 (Optional) Run Locally Without Docker
 If you'd rather run it natively with Python:
 # 1. Set up a virtual environment
 python -m venv venv
