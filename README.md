@@ -9,7 +9,7 @@ A simple, elegant Flask web app to download YouTube videos or audio — with a r
 No Python installation needed. Just clone, build, and run:
 
 # 1. Clone the repo
-git clone https://github.com/YOUR_USERNAME/youtube-downloader.git
+git clone https://github.com/JohnPeter-hub/Local_Youtube_Downloader.git
 cd youtube-downloader
 
 # 2. Build the Docker image
