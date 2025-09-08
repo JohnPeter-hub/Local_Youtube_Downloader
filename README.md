@@ -1,6 +1,3 @@
-# Local_Youtube_Downloader
-Download YouTube videos or audio via a clean Flask web app — Dockerized and ready to run.
-
 # 🎬 YouTube Downloader Web App (Dockerized)
 
 A simple, elegant Flask web app to download YouTube videos or audio — with a responsive Bootstrap UI, real-time download logs, and fully Dockerized deployment.
@@ -32,7 +29,7 @@ docker run -p 5050:5000 youtube-downloader
 🐳 Easy setup using Docker
 
 
-🧪 (Optional) Run Locally Without Docker
+#🧪 (Optional) Run Locally Without Docker
 If you'd rather run it natively with Python:
 # 1. Set up a virtual environment
 python -m venv venv
