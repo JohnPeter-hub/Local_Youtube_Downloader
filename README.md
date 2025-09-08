@@ -10,7 +10,8 @@ No Python installation needed. Just clone, build, and run:
 
 # 1. Clone the repo
 git clone https://github.com/JohnPeter-hub/Local_Youtube_Downloader.git
-cd youtube-downloader
+
+cd Local_Youtube_Downloader
 
 # 2. Build the Docker image
 docker build -t youtube-downloader .
