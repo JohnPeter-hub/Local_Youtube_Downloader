@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Download Progress</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+        body {
+            background-color: #f8f9fa;
+            padding-top: 40px;
+        }
+
+        .terminal {
+            background-color: #000;
+            color: #32cd32;
+            font-family: 'Courier New', Courier, monospace;
+            height: 400px;
+            width: 100%;
+            padding: 15px;
+            border-radius: 8px;
+            overflow-y: auto;
+            resize: none;
+        }
+
+        .container {
+            max-width: 800px;
+        }
+
+        h2 {
+            font-weight: 600;
+        }
+
+        .btn-home {
+            margin-top: 20px;
+            width: 100%;
+        }
+    </style>
+
+    <script>
+        const logId = "{{ log_id }}";
+        const evtSource = new EventSource(`/logs/${logId}`);
+        evtSource.onmessage = function (event) {
+            const log = document.getElementById("log");
+            log.value += event.data + "\n";
+            log.scrollTop = log.scrollHeight;
+        };
+    </script>
+</head>
+
+<body>
+    <div class="container">
+        <h2 class="text-center mb-4">📦 Download in Progress...</h2>
+        <textarea id="log" class="terminal" readonly></textarea>
+
+        <!-- Back to Home Button -->
+        <a href="/" class="btn btn-secondary btn-home">← Back to Home</a>
+    </div>
+
+    <!-- Bootstrap JS (Optional for future use) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
