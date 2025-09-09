@@ -22,7 +22,7 @@ You have three ways to get started. The easiest is pulling the Docker image from
 ## 🟢 Option 1: Run via Docker Hub (Recommended – just 1 Command)
 ✅ No setup, no cloning — just pull and run. Copy the below command in your terminal. Make sure you have Docker CLI installed.
 
-<mark>docker run -p 8000:5000 yourusername/local-youtube-downloader</mark><br>
+<mark>docker run -p 8000:5000 itsyoh/local-youtube-downloader</mark><br>
 🔗 Open your browser: http://localhost:8000<br>
 💡 If port 8000 is in use, change it as needed (e.g., -p 8080:5000)<br>
 
